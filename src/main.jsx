@@ -10,25 +10,25 @@ import Characters from './routes/Characters.jsx';
 import ErrorPage from './routes/ErrorPage.jsx';
 import CharactersDetails from './routes/CharactersDetails.jsx'
 
-
+const basename = `/hxhWiki/`;
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: basename,
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
       {
-        path: "/",
+        path: basename,
         element: <Home />,
       },
       {
-        path: "characters",
+        path: basename + "characters",
         element: <Characters />,
       },
       // nested routes
       {
-        path:"/characters/:id",
+        path: basename + "characters/:id",
         element: <CharactersDetails />,
       }
     ]
