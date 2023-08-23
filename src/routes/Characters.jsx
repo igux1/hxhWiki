@@ -8,13 +8,13 @@ const Characters = () => {
     <div className="characters-container">
     <h1>Personagens</h1>
     <p>
-      <Link to="/characters/gon">Gon</Link>
+      <Link to="gon">Gon</Link>
     </p>
     <p>
-      <Link to="/characters/killua">Killua</Link>
+      <Link to="killua">Killua</Link>
     </p>
     <p>
-      <Link to="/characters/meruem">Meruem</Link>
+      <Link to="meruem">Meruem</Link>
     </p>
     </div>
   )

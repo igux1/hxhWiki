@@ -27,15 +27,15 @@ const Home = () => {
       <section className="characters-section">
         <h2>Conheça Alguns dos Personagens</h2>
         <div className="characters-container">
-          <Link to="/characters/gon">
+          <Link to="characters/gon">
             <img src={GonImage} alt="Gon" />
             <p>Gon</p>
           </Link>
-          <Link to="/characters/killua">
+          <Link to="characters/killua">
             <img src={KilluaImage} alt="Killua" />
             <p>Killua</p>
           </Link>
-          <Link to="/characters/meruem">
+          <Link to="characters/meruem">
             <img src={MeruemImage} alt="Meruem" />
             <p>Meruem</p>
           </Link>
