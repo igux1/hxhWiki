@@ -1,0 +1,116 @@
+/* Home.css */
+
+/* Estilização da página Home */
+.home-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
+/* Estilização da seção do herói */
+.hero-section {
+  background-color: #B8244B; /* Vermelho Hunter x Hunter */
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Estilização do título da seção do herói */
+.hero-section h1 {
+  font-size: 2.5rem;
+}
+
+/* Estilização da seção "Sobre Hunter x Hunter" */
+.about-section {
+  padding: 20px;
+}
+
+/* Estilização do título da seção "Sobre Hunter x Hunter" */
+.about-section h2 {
+  font-size: 2rem;
+  color: #FDAB4D; /* Amarelo Hunter x Hunter */
+}
+
+/* Estilização do texto da seção "Sobre Hunter x Hunter" */
+.about-section p {
+  font-size: 1.2rem;
+}
+
+/* Estilização da seção "Conheça Alguns dos Personagens" */
+.characters-section {
+  padding: 20px;
+}
+
+/* Estilização do título da seção "Conheça Alguns dos Personagens" */
+.characters-section h2 {
+  font-size: 2rem;
+  color: #006F44; /* Verde Hunter x Hunter */
+}
+
+/* Estilização dos links dos personagens */
+.characters-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Estilização das imagens dos personagens */
+.characters-container a img {
+  max-width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efeito de escala nas imagens ao passar o mouse */
+.characters-container a img:hover {
+  transform: scale(1.1);
+}
+
+/* Estilização dos nomes dos personagens */
+.characters-container p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Estilização da seção "Assista ao Anime" */
+.watch-section {
+  padding: 20px;
+  background-color: #006F44; /* Verde Hunter x Hunter */
+  color: #fff;
+  border-radius: 0 0 10px 10px;
+}
+
+/* Estilização do título da seção "Assista ao Anime" */
+.watch-section h2 {
+  font-size: 2rem;
+}
+
+/* Estilização do botão de assistir */
+.watch-button {
+  background-color: #B8244B; /* Vermelho Hunter x Hunter */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Efeito de mudança de cor no botão ao passar o mouse */
+.watch-button:hover {
+  background-color: #FDAB4D; /* Amarelo Hunter x Hunter */
+}
+
+/* Alinhamento do botão ao centro */
+.watch-section .watch-button {
+  display: block;
+  margin: 0 auto;
+}

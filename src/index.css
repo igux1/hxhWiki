@@ -1,0 +1,44 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Helvetica;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    background-color: #AD945D;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #006F44;
+    font-weight: bold;
+    font-size: 18px;
+    opacity: 0.8;
+  }
+  
+  nav a:hover {
+    opacity: 1
+  }
+
+.App {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
