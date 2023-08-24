@@ -9,6 +9,7 @@ import Home from './routes/Home.jsx';
 import Characters from './routes/Characters.jsx';
 import ErrorPage from './routes/ErrorPage.jsx';
 import CharactersDetails from './routes/CharactersDetails.jsx'
+import PhantomTroupe from './routes/PhantomTroupe.jsx'
 
 const basename = `/hxhWiki/`;
 
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {
         path: basename + "characters",
         element: <Characters />,
+      },
+      {
+        path: basename + "phantomTroupe",
+        element: <PhantomTroupe />,
       },
       // nested routes
       {

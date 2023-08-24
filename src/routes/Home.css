@@ -108,3 +108,63 @@
 .watch-button:hover {
   background-color: #AD945D;
 }
+
+/* Adicione esta seção no seu arquivo Home.css */
+.phantom-troupe {
+  background-color: #000;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.phantom-troupe h2 {
+  font-size: 24px;
+  color: #B8244B;
+  margin-bottom: 20px;
+}
+
+.phantom-troupe p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.phantom-troupe span {
+  color: #FDAB4D; /* Cor especial para destacar o texto */
+  font-weight: bold;
+}
+
+.phantom-troupe img {
+  background-size: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  margin-top: 20px;
+}
+
+.phantom-troupe img:hover {
+  transform: scale(1.1);
+}
+
+
+/* No seu arquivo Home.css, adicione estilos para o botão ao lado da imagem */
+.image-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-button {
+  background-color: #FDAB4D;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.image-button:hover {
+  background-color: #AD945D;
+}

@@ -21,3 +21,8 @@ body {
     flex-direction: column;
     justify-content: center;
 }
+
+.phantom-troupe img {
+    background-position: center;
+    border-radius: 5px;
+}

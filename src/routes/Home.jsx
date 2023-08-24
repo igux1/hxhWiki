@@ -5,6 +5,7 @@ import './Home.css';
 import GonImage from '../assets/GonFreecs.jpg';
 import KilluaImage from '../assets/KilluaZolldyck.jpg';
 import MeruemImage from '../assets/Meruem.jpg';
+import Phantom1Image from '../assets/Phantom1.jpg';
 
 const Home = () => {
   const animeLink = 'https://animesonlinecc.to/anime/hunter-x-hunter-2011/';
@@ -29,18 +30,37 @@ const Home = () => {
         <div className="characters-container">
           <Link to="characters/gon">
             <img src={GonImage} alt="Gon" />
-            <p>Gon</p>
+            <h3>Gon</h3>
           </Link>
           <Link to="characters/killua">
             <img src={KilluaImage} alt="Killua" />
-            <p>Killua</p>
+            <h3>Killua</h3>
           </Link>
           <Link to="characters/meruem">
             <img src={MeruemImage} alt="Meruem" />
-            <p>Meruem</p>
+            <h3>Meruem</h3>
           </Link>
         </div>
       </section>
+      
+<section className='phantom-troupe'>
+  <div>
+    <h2>Conheça Sobre a Phantom Troupe</h2>
+    <p>
+      Também conhecida como <span>Genei Ryodan, ou 幻影旅団</span>,
+      A Phantom Troupe é uma organização criminosa de 13 membros que é considerada a mais poderosa e perigosa do mundo de Hunter x Hunter.
+      Eles são especialistas em combate, roubo e assassinato, e não têm medo de usar violência para conseguir o que querem.
+      Quer saber mais sobre essa organização sinistra?
+    </p>
+    <Link to="phantomTroupe">
+      <div className="image-button-container">
+      <img src={Phantom1Image} alt="Killua" />
+        <button className="image-button">Clique na Imagem </button>
+      </div>
+    </Link>
+  </div>
+</section>
+
 
       <section className="watch-section">
         <h2>Assista ao Anime</h2>
