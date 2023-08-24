@@ -5,7 +5,7 @@ import "./Characters.css"
 
 const Characters = () => {
   return (
-    <div className="characters-container">
+    <div className="characters-container2">
     <h1>Personagens</h1>
     <p>
       <Link to="gon">Gon</Link>

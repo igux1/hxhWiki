@@ -1,116 +1,110 @@
 /* Home.css */
-
-/* Estilização da página Home */
 .home-container {
-  padding: 20px;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  margin: 20px;
-}
-
-/* Estilização da seção do herói */
-.hero-section {
-  background-color: #B8244B; /* Vermelho Hunter x Hunter */
+  background-color: #000;
   color: #fff;
   padding: 20px;
-  border-radius: 10px 10px 0 0;
+  font-family: Arial, sans-serif;
 }
 
-/* Estilização do título da seção do herói */
+.hero-section {
+  background-image: url('../assets/DarkContinent.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px 0;
+}
+
 .hero-section h1 {
-  font-size: 2.5rem;
+  font-size: 36px;
+  margin-bottom: 20px;
 }
 
-/* Estilização da seção "Sobre Hunter x Hunter" */
+.hero-section p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
 .about-section {
-  padding: 20px;
+  padding: 40px 0;
+  text-align: center;
 }
 
-/* Estilização do título da seção "Sobre Hunter x Hunter" */
 .about-section h2 {
-  font-size: 2rem;
-  color: #FDAB4D; /* Amarelo Hunter x Hunter */
+  font-size: 24px;
+  color: #B8244B;
+  margin-bottom: 20px;
 }
 
-/* Estilização do texto da seção "Sobre Hunter x Hunter" */
 .about-section p {
-  font-size: 1.2rem;
+  font-size: 18px;
+  line-height: 1.6;
 }
 
-/* Estilização da seção "Conheça Alguns dos Personagens" */
 .characters-section {
-  padding: 20px;
+  padding: 40px 0;
+  text-align: center;
 }
 
-/* Estilização do título da seção "Conheça Alguns dos Personagens" */
 .characters-section h2 {
-  font-size: 2rem;
-  color: #006F44; /* Verde Hunter x Hunter */
+  font-size: 24px;
+  color: #B8244B;
+  margin-bottom: 20px;
 }
 
-/* Estilização dos links dos personagens */
 .characters-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
-/* Estilização das imagens dos personagens */
-.characters-container a img {
-  max-width: 200px;
-  border-radius: 10px;
-  transition: transform 0.3s ease-in-out;
+.characters-container a {
+  text-decoration: none;
+  color: #fff;
+  transition: transform 0.3s ease;
 }
 
-/* Efeito de escala nas imagens ao passar o mouse */
-.characters-container a img:hover {
+.characters-container a:hover {
+  transform: scale(1.05);
+}
+
+.characters-container img {
+  max-width: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.characters-container img:hover {
   transform: scale(1.1);
 }
 
-/* Estilização dos nomes dos personagens */
-.characters-container p {
-  font-size: 1.2rem;
-  margin-top: 10px;
-  color: #333;
-}
-
-/* Estilização da seção "Assista ao Anime" */
 .watch-section {
-  padding: 20px;
-  background-color: #006F44; /* Verde Hunter x Hunter */
-  color: #fff;
-  border-radius: 0 0 10px 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #B8244B;
+  padding: 40px 0;
+  text-align: center;
 }
 
-/* Estilização do título da seção "Assista ao Anime" */
 .watch-section h2 {
-  font-size: 2rem;
-}
-
-/* Estilização do botão de assistir */
-.watch-button {
-  background-color: #B8244B; /* Vermelho Hunter x Hunter */
+  font-size: 24px;
   color: #fff;
-  border: none;
+  margin-bottom: 20px;
+}
+
+.watch-button {
+  background-color: #FDAB4D;
+  color: #fff;
+  font-size: 18px;
   padding: 10px 20px;
-  font-size: 1.2rem;
   border-radius: 5px;
-  cursor: pointer;
   text-decoration: none;
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  text-align: center;
+  margin: auto;
+  margin-top: 15px;
 }
 
-/* Efeito de mudança de cor no botão ao passar o mouse */
 .watch-button:hover {
-  background-color: #FDAB4D; /* Amarelo Hunter x Hunter */
-}
-
-/* Alinhamento do botão ao centro */
-.watch-section .watch-button {
-  display: block;
-  margin: 0 auto;
+  background-color: #AD945D;
 }
