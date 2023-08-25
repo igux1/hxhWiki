@@ -10,6 +10,8 @@ const Navbar = () => {
         <Link to ="/hxhWiki/">Home</Link>
         <Link to ="characters">Characters</Link>
         <Link to ="phantomTroupe">Phantom Troupe</Link>
+        <Link to ="zoldyckFamily">Zoldyck Family</Link>
+        <Link to ="nen">Nen</Link>
     </nav>
     </div>
   )

@@ -9,6 +9,7 @@ import MeruemImage from '../assets/Meruem.jpg';
 import ChrolloImage from '../assets/Chrollo.jpg';
 import IllumiImage from '../assets/Illumi.jpg';
 import HisokaImage from '../assets/Hisoka.jpg';
+import ShizukuImage from "../assets/Shizuku.jpg";
 
 const Characters = () => {
   return (
@@ -48,6 +49,12 @@ const Characters = () => {
         <Link to="hisoka">
           <img src={HisokaImage} alt="Hisoka" />
           <p>Hisoka</p>
+        </Link>
+      </div>
+      <div className="character">
+        <Link to="shizuku">
+          <img src={ShizukuImage} alt="Shizuku" />
+          <p>Shizuku</p>
         </Link>
       </div>
     </div>
