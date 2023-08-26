@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import GonImage from "../assets/GonFreecs.jpg"; // Importe a imagem do Gon
-import KilluaImage from "../assets/KilluaZolldyck.jpg"; // Importe a imagem do Killua
-import MeruemImage from "../assets/Meruem.jpg"; // Importe a imagem do Meruem
+import GonImage from "../assets/GonFreecs.jpg";
+import KilluaImage from "../assets/KilluaZolldyck.jpg";
+import MeruemImage from "../assets/Meruem.jpg";
 import ChrolloImage from "../assets/Chrollo.jpg";
 import IllumiImage from "../assets/Illumi.jpg";
 import HisokaImage from "../assets/Hisoka.jpg";
 import ShizukuImage from "../assets/Shizuku.jpg";
+import KurapikaImage from "../assets/Kurapika.jpg"
+import SilvaImage from "../assets/Silva.jpg"
+import NeteroImage from "../assets/Netero.jpg"
 import "./CharactersDetails.css";
 
 const CharacterDetail = () => {
@@ -15,7 +18,6 @@ const CharacterDetail = () => {
 
   let characterInfo = {};
 
-  // Verifique qual é o ID do personagem atual e atribua informações personalizadas com base nesse ID
   if (id === "gon") {
     characterInfo = {
       personagemId: "gon",
@@ -27,7 +29,7 @@ const CharacterDetail = () => {
       image: GonImage,
       ptm: false,
       zf: false,
-      nenType: "enhancement",
+      nenType: "Enhancement",
     };
   } else if (id === "killua") {
     characterInfo = {
@@ -40,7 +42,7 @@ const CharacterDetail = () => {
       image: KilluaImage,
       ptm: false,
       zf: true,
-      nenType: "transmutation",
+      nenType: "Transmutation",
     };
   } else if (id === "meruem") {
     characterInfo = {
@@ -53,7 +55,7 @@ const CharacterDetail = () => {
       image: MeruemImage,
       ptm: false,
       zf: false,
-      nenType: "emission",
+      nenType: "Emission",
     };
   } else if (id === "chrollo") {
     characterInfo = {
@@ -66,7 +68,7 @@ const CharacterDetail = () => {
       image: ChrolloImage,
       ptm: true,
       zf: false,
-      nenType: "specialization",
+      nenType: "Specialization",
     };
   } else if (id === "illumi") {
     characterInfo = {
@@ -79,7 +81,7 @@ const CharacterDetail = () => {
       image: IllumiImage,
       ptm: true,
       zf: true,
-      nenType: "manipulation",
+      nenType: "Manipulation",
     };
   } else if (id === "hisoka") {
     characterInfo = {
@@ -92,7 +94,7 @@ const CharacterDetail = () => {
       image: HisokaImage,
       ptm: true,
       zf: false,
-      nenType: "transmutation",
+      nenType: "Transmutation",
     };
   } else if (id === "shizuku") {
     characterInfo = {
@@ -105,29 +107,94 @@ const CharacterDetail = () => {
       image: ShizukuImage,
       ptm: true,
       zf: false,
-      nenType: "conjuration",
+      nenType: "Conjuration",
     };
   }
+  else if (id === "kurapika") {
+    characterInfo = {
+      personagemId: "kurapika",
+      name: "Kurapika",
+      quote: "I will capture every last one of the Phantom Troupe and avenge my clan.",
+      intelligence: 6,
+      nen: 4,
+      experience: 4,
+      image: KurapikaImage, // Certifique-se de importar a imagem de Kurapika
+      ptm: false,
+      zf: false,
+      nenType: "Specialization"
+    };
+  }
+  else if (id === "netero") {
+    characterInfo = {
+      personagemId: "netero",
+      name: "Isaac Netero",
+      quote: "You should enjoy the little detours to the fullest. Because that's where you'll find the things more important than what you want.",
+      intelligence: 9,
+      nen: 10,
+      experience: 9,
+      image: NeteroImage, // Certifique-se de importar a imagem de Netero
+      ptm: false,
+      zf: false,
+      nenType: "Enhancement",
+    };
+  }
+  else if (id === "silva") {
+    characterInfo = {
+      personagemId: "silva",
+      name: "Silva Zoldyck",
+      quote: "I do not like to kill. I love to kill. I need to kill. It's in my blood.",
+      intelligence: 8,
+      nen: 9,
+      experience: 8.5,
+      image: SilvaImage, // Certifique-se de importar a imagem de Silva
+      ptm: false,
+      zf: true,
+      nenType: "Emission",
+    };
+  }
+    
 
   return (
     <div className="character-container">
-      <div className="character-card"> {/* Container da carta */}
+      <div className="character-card">
         <h2>{characterInfo.name}</h2>
         {characterInfo.ptm && (
           <Link to="/hxhWiki/phantomTroupe">
             <h4>Phantom Troupe Member</h4>
-          </Link>)}
+          </Link>
+        )}
         {characterInfo.zf && (
           <Link to="/hxhWiki/zoldyckFamily">
             <h4>Zoldyck Family Member</h4>
-          </Link>)}
+          </Link>
+        )}
         <img src={characterInfo.image} alt={characterInfo.name} />
-        <div className="character-info"> {/* Container das informações */}
+        <div className="character-info">
           <quote className="character-quote">{characterInfo.quote}</quote>
           <p>Intelligence: {characterInfo.intelligence}/10</p>
           <p>Nen/Power: {characterInfo.nen}/10</p>
           <p>Experience: {characterInfo.experience}/10</p>
-          <p>Nen Type: {characterInfo.nenType}</p>
+          <p>
+            Nen Type:
+            {characterInfo.nenType === "Emission" && (
+              <Link to="/hxhWiki/nen/emission">Emission</Link>
+            )}
+            {characterInfo.nenType === "Transmutation" && (
+              <Link to="/hxhWiki/nen/transmutation">Transmutation</Link>
+            )}
+            {characterInfo.nenType === "Manipulation" && (
+              <Link to="/hxhWiki/nen/manipulation">Manipulation</Link>
+            )}
+            {characterInfo.nenType === "Enhancement" && (
+              <Link to="/hxhWiki/nen/enhancement">Enhancement</Link>
+            )}
+            {characterInfo.nenType === "Conjuration" && (
+              <Link to="/hxhWiki/nen/conjuration">Conjuration</Link>
+            )}
+            {characterInfo.nenType === "Specialization" && (
+              <Link to="/hxhWiki/nen/specialization">Specialization</Link>
+            )}
+          </p>
         </div>
       </div>
     </div>

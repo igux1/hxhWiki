@@ -10,6 +10,9 @@ import ChrolloImage from '../assets/Chrollo.jpg';
 import IllumiImage from '../assets/Illumi.jpg';
 import HisokaImage from '../assets/Hisoka.jpg';
 import ShizukuImage from "../assets/Shizuku.jpg";
+import KurapikaImage from "../assets/Kurapika.jpg"
+import SilvaImage from "../assets/Silva.jpg"
+import NeteroImage from "../assets/Netero.jpg"
 
 const Characters = () => {
   return (
@@ -55,6 +58,24 @@ const Characters = () => {
         <Link to="shizuku">
           <img src={ShizukuImage} alt="Shizuku" />
           <p>Shizuku</p>
+        </Link>
+      </div>
+      <div className="character">
+        <Link to="kurapika">
+          <img src={KurapikaImage} alt="Kurapika" />
+          <p>Kurapika</p>
+        </Link>
+      </div>
+      <div className="character">
+        <Link to="silva">
+          <img src={SilvaImage} alt="Silva" />
+          <p>Silva</p>
+        </Link>
+      </div>
+      <div className="character">
+        <Link to="netero">
+          <img src={NeteroImage} alt="Netero" />
+          <p>Netero</p>
         </Link>
       </div>
     </div>

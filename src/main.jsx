@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 
+
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import Home from './routes/Home.jsx';
@@ -16,6 +17,12 @@ import Ten from './routes/Ten.jsx'
 import Zetsu from './routes/Zetsu.jsx'
 import Ren from './routes/Ren.jsx'
 import Emission from './routes/Emission.jsx'
+import Transmutation from './routes/Transmutation.jsx'
+import Manipulation from './routes/Manipulation.jsx'
+import Enhancement from './routes/Enhancement.jsx'
+import Conjuration from './routes/Conjuration.jsx'
+import Specialization from './routes/Specialization.jsx'
+
 
 const basename = `/hxhWiki/`;
 
@@ -65,6 +72,26 @@ const router = createBrowserRouter([
       {
         path: basename + "nen/emission",
         element: <Emission />,
+      },
+      {
+        path: basename + "nen/transmutation",
+        element: <Transmutation />,
+      },
+      {
+        path: basename + "nen/manipulation",
+        element: <Manipulation />,
+      },
+      {
+        path: basename + "nen/enhancement",
+        element: <Enhancement />,
+      },
+      {
+        path: basename + "nen/conjuration",
+        element: <Conjuration />,
+      },
+      {
+        path: basename + "nen/specialization",
+        element: <Specialization />,
       },
     ]
   },
